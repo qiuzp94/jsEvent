@@ -1,0 +1,44 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.wrapper{
+    margin:20px 0 0 20px;
+    display: inline-block;
+    position: relative;
+    border:1px solid red;
+}
+.clickMe{
+    padding:10px;
+}
+
+.popover{
+    position: absolute;
+    padding:20px;
+    width:45px;
+    background:white;
+    top:0px;
+    left:80px;
+    word-wrap:nowrap;
+    border-radius: 10px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.2);
+    border:1px solid #aaa;
+    display: none;
+}
+/* 三角形 */
+.popover::before{
+    content:"";
+    position: absolute;
+    right:100%;
+    top:8px;
+    border:13px solid transparent;
+    border-right: 26px solid #aaa;
+}
+.popover::after{
+    content:'';
+    position: absolute;
+    right:98%;
+    top:8px;
+    border:13px solid transparent;
+    border-right:26px solid white;
+} 
